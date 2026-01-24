@@ -10,23 +10,23 @@ interface DataType {
 const footer_data: DataType[] = [
    {
       id: 1,
-      title: "Service",
+      title: "Services",
       nav_links: [
-         { link: "service", title: "Web design" },
-         { link: "service", title: "Digital marketing" },
-         { link: "service", title: "It management" },
-         { link: "service", title: "Cloud services" },
-         { link: "service", title: "Machine learning" },
+         { link: "service", title: "Web Development" },
+         { link: "service", title: "App Development" },
+         { link: "service", title: "SEO Services" },
+         { link: "service", title: "Digital Marketing" },
+         { link: "service", title: "Website Security" },
       ],
    },
    {
       id: 2,
-      title: "Useful link",
+      title: "Quick Links",
       nav_links: [
          { link: "about", title: "About Us" },
-         { link: "team", title: "Team" },
+         { link: "team", title: "Our Team" },
          { link: "project", title: "Portfolio" },
-         { link: "service", title: "Service" },
+         { link: "blog", title: "Blog" },
          { link: "contact", title: "Contact Us" },
       ]
    },

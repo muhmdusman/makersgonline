@@ -18,21 +18,21 @@ const approach_data: DataType[] = [
       id: 1,
       class_name:"border-bottom",
       icon: approachIcon_1,
-      title: "Check And Search Hazards",
-      desc: (<>Collect and review information about the hazards present or likely to be present in the workplace. Conduct initial and periodic workplace inspections</>),
+      title: "Discovery & Planning",
+      desc: (<>We start by understanding your business goals, target audience, and market positioning. Our team conducts thorough research and planning to create a strategic roadmap.</>),
    },
    {
       id: 2,
       class_name:"border-bottom",
       icon: approachIcon_2,
-      title: "Departure Of The Our Experts",
-      desc: (<>Think about an airport that has departure gates for outgoing passengers and ... Boost your test score with programs developed by Vocabulary.com&apos;s experts.</>),
+      title: "Design & Development",
+      desc: (<>Our expert designers and developers create beautiful, functional solutions tailored to your brand. We use latest technologies and best practices for optimal results.</>),
    },
    {
       id: 3,
       icon: approachIcon_3,
-      title: "Install And Configure Software",
-      desc: (<>Initiating and configuring software is a normal part of any software install but may vary. This could be as simple as filling in user details to configuring</>),
+      title: "Testing & Optimization",
+      desc: (<>Rigorous testing ensures quality and performance. We continuously optimize for speed, usability, and search engine visibility to maximize your ROI.</>),
    },
 ]
 
@@ -46,8 +46,8 @@ const ApproachArea = () => {
          </div>
          <div className="col-lg-5 align-self-center">
             <div className="section-title">
-               <h2 className="title mb-4">Our Approach To Security</h2>
-               <p>AI technology is perfect for best business solutions & we offer help to achieve your goals.</p>
+               <h2 className="title mb-4">Our Development Process</h2>
+               <p>We follow a comprehensive, client-focused approach to deliver exceptional digital solutions and measurable business results.</p>
             </div>
             {approach_data.map((item) => (
                <div key={item.id} className="single-security-wrap-2">

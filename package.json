@@ -1,6 +1,7 @@
 {
-  "name": "itechie",
-  "version": "0.1.0",
+  "name": "makers-go-online",
+  "version": "1.0.0",
+  "description": "MakersGoOnline - Professional Services Website",
   "private": true,
   "scripts": {
     "dev": "next dev",

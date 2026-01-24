@@ -16,13 +16,13 @@ const Banner = () => {
                   </div>
                   <div className="col-lg-5 col-md-10 order-lg-first">
                      <div className="banner-inner style-white">
-                        <h5>24/7 Cybersecurity Operation Center</h5>
+                        <h5>Transform Your Digital Presence</h5>
                         <h1 className="title s-animate-2">
-                           We Help To Protect Modern Information Form Hacker
+                           Web Development, App Development & SEO Solutions
                         </h1>
                         <div className="btn-wrap s-animate-4">
-                           <Link className="it-btn btn-white me-4" href="/blog">Discover More</Link>
-                           <Link className="it-btn btn-border-white" href="/contact">Discover More</Link>
+                           <Link className="it-btn btn-white me-4" href="/service">Our Services</Link>
+                           <Link className="it-btn btn-border-white" href="/contact">Get Started</Link>
                         </div>
                      </div>
                   </div>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import bannerImg from "@/assets/img/home-cyber/tab/1.webp"
 import bannerListImg from "@/assets/img/home-cyber/tab/icon-shild.webp"
 
-const tab_title: string[] = ["Our Valus", "Tranparency", "Our Mission", "History"];
+const tab_title: string[] = ["Our Mission", "Our Values", "Why Choose Us", "Our Approach"];
 
 interface DataType {
    desc: JSX.Element;
@@ -17,20 +17,20 @@ interface DataType {
 
 const tab_content: DataType[] = [
    {
-      desc: (<>Consistently, your association&apos;s way of life turns out to be more essential to its prosperity. Are the standards directing your association the most ideal to take care of the issues you&apos;re confronting?</>),
-      list: [{ icon: bannerListImg, title: "Quo fastidii perpetua reprimique impetus utroque" }, { icon: bannerListImg, title: "Has at erat nominavi, id quod delicat quo sed lorem set." }],
+      desc: (<>We empower businesses through innovative digital solutions. Our mission is to help companies transform their digital presence through cutting-edge web development, mobile applications, and strategic SEO services that drive real results.</>),
+      list: [{ icon: bannerListImg, title: "Innovative digital transformation" }, { icon: bannerListImg, title: "Delivering measurable business growth" }],
    },
    {
-      desc: (<>Consistently, your association&apos;s way of life turns out to be more essential to its prosperity. Are the standards directing your association the most ideal to take care of the issues you&apos;re confronting?</>),
-      list: [{ icon: bannerListImg, title: "Quo fastidii perpetua reprimique impetus utroque" }, { icon: bannerListImg, title: "Has at erat nominavi expetendis, id quod delicat quo sed lorem set impetus." }],
+      desc: (<>We believe in excellence, transparency, and client success. Our team is committed to delivering high-quality solutions that exceed expectations and building long-term partnerships with our clients.</>),
+      list: [{ icon: bannerListImg, title: "Quality and innovation in every project" }, { icon: bannerListImg, title: "Transparent communication and collaboration" }],
    },
    {
-      desc: (<>Consistently, your association&apos;s way of life turns out to be more essential to its prosperity. Are the standards directing your association the most ideal to take care of the issues you&apos;re confronting?</>),
-      list: [{ icon: bannerListImg, title: "Quo fastidii perpetua reprimique impetus utroque" }, { icon: bannerListImg, title: "Has at erat nominavi, id quod delicat quo sed lorem set." }],
+      desc: (<>With years of combined experience, our expert team brings proven methodology and best practices to every project. We focus on delivering measurable ROI and sustainable growth for your business.</>),
+      list: [{ icon: bannerListImg, title: "Expert team with proven track record" }, { icon: bannerListImg, title: "Results-driven approach and methodology" }],
    },
    {
-      desc: (<>Consistently, your association&apos;s way of life turns out to be more essential to its prosperity. Are the standards directing your association the most ideal to take care of the issues you&apos;re confronting?</>),
-      list: [{ icon: bannerListImg, title: "Quo fastidii perpetua reprimique impetus utroque" }, { icon: bannerListImg, title: "Has at erat nominavi expetendis, id quod delicat quo sed lorem set impetus." }],
+      desc: (<>We follow a comprehensive approach: discovery and strategy, design and development, testing and optimization, and continuous improvement. Your success is our success.</>),
+      list: [{ icon: bannerListImg, title: "Comprehensive discovery and planning" }, { icon: bannerListImg, title: "Agile development and continuous optimization" }],
    },
 ]
 

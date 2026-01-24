@@ -1,15 +1,10 @@
-import HomeOne from "@/components/homes/home-one";
+import HomeFive from "@/components/homes/home-five";
 import Wrapper from "@/layouts/Wrapper";
 
-export const metadata = {
-  title: "Iitechie - IT Solutions and Services React Next js Template",
-};
-const index = () => {
+export default function Home() {
   return (
     <Wrapper>
-      <HomeOne />
+      <HomeFive />
     </Wrapper>
-  )
+  );
 }
-
-export default index

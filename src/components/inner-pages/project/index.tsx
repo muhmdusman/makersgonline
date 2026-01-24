@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/common/Breadcrumb"
 import CtaArea from "@/components/common/CtaArea"
-import Brand from "@/components/homes/home-three/Brand"
+import Brand from "@/components/homes/home-five/Brand"
 import FooterOne from "@/layouts/footers/FooterOne"
 import HeaderThree from "@/layouts/headers/HeaderThree"
 import ProjectArea from "./ProjectArea"
