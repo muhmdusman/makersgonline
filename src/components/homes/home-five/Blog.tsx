@@ -9,12 +9,12 @@ const Blog = () => {
             <div className="section-title">
                <div className="row justify-content-center">
                   <div className="col-lg-6 col-md-8">
-                     <h2 className="title">Our Latest News</h2>
-                     <p className="content">AI technology is perfect for best business solutions & we offer help to achieve your goals.</p>
+                     <h2 className="title">Our Latest Insights</h2>
+                     <p className="content">Stay updated with industry trends, development tips, and SEO strategies to help your business succeed online.</p>
                   </div>
                   <div className="col-lg-6 col-md-4 align-self-center mt-4 mt-md-0">
                      <div className="btn-wrap text-md-end">
-                        <Link className="it-btn btn-base" href="/team">Discover More</Link>
+                        <Link className="it-btn btn-base" href="/blog">Read More Articles</Link>
                      </div>
                   </div>
                </div>

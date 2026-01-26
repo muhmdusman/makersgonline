@@ -100,28 +100,16 @@ const pricing_data: DataType[] = [
       id: 1,
       page: "home_5",
       price_icon_img: priceIcon_1,
-      plan: "Basic Plan",
-      price: 19,
-      sub_price: ".50$",
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration" }, { list: "Unlimited Features" }],
-   },
-   {
-      id: 2,
-      page: "home_5",
-      price_icon_img: priceIcon_2,
-      plan: "Standard Plan",
-      price: 56,
-      sub_price: ".00$",
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration" }, { list: "Unlimited Features" }],
-   },
-   {
-      id: 3,
-      page: "home_5",
-      price_icon_img: priceIcon_3,
-      plan: "Premium Plan",
-      price: 56,
-      sub_price: ".50$",
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration" }, { list: "Unlimited Features" }],
+      plan: "Complete Website Solution",
+      price: 5000,
+      sub_price: "/one-time",
+      pricing_list: [
+         { list: "Professional Website Design" },
+         { list: "Web Hosting & Deployment" },
+         { list: "SEO Optimization" },
+         { list: "Social Media Account Setup" },
+         { list: "Free Maintenance (1 Month)" }
+      ],
    },
 ];
 

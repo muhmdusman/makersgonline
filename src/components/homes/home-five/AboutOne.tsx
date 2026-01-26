@@ -54,7 +54,7 @@ const AboutOne = () => {
             </div>
             <div className="col-lg-6 align-self-center">
                <div className="section-title px-lg-5 mb-0">
-                  <h2 className="title mb-4">Oversee risk and speed up your business advancement and security at a similar speed.</h2>
+                  <h2 className="title mb-4">Build Your Digital Success with MakersGoOnline - Your Trusted Development Partner</h2>
                </div>
                <div className="about-tab-5 px-lg-5">
                   <ul className="nav nav-pills" id="pills-tab" role="tablist">

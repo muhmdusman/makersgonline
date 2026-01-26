@@ -32,7 +32,7 @@ const HomeContact = () => {
    return (
       <div className="consulting-contact-form" onSubmit={handleSubmit(onSubmit)}>
          <h3>Get in touch with us</h3>
-         <p className="mb-4">AI technology is perfect for best business solutions & we offer help to achieve your goals.</p>
+         <p className="mb-4">Ready to transform your digital presence? Reach out to our team to discuss your web development, app development, or SEO needs. We&apos;re here to help your business succeed online.</p>
          <div className="row">
             <div className="col-lg-6">
                <div className="single-input-inner style-border">
