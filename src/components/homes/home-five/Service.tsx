@@ -10,9 +10,9 @@ const Service = () => {
                <div className="row justify-content-center">
                   <div className="col-lg-6 col-md-8">
                      <h2 className="title text-center">
-                        Cybersecurity Service
+                        Our Services
                      </h2>
-                     <p className="content text-center">We are one of the world’s largest cybersecurity companies</p>
+                     <p className="content text-center">Professional web development, mobile app development, and SEO services designed to grow your business</p>
                   </div>
                </div>
             </div>

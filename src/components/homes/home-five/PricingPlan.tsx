@@ -10,9 +10,9 @@ const PricingPlan = () => {
                <div className="row justify-content-center">
                   <div className="col-lg-7">
                      <h2 className="title">
-                        Great Price Plan For You
+                        Flexible Pricing Plans
                      </h2>
-                     <p className="content mt-2">We are one of the world’s largest cyberse</p>
+                     <p className="content mt-2">Choose the perfect package for your web development, app development, or SEO needs. All plans include dedicated support and continuous optimization.</p>
                   </div>
                </div>
             </div>
@@ -37,7 +37,7 @@ const PricingPlan = () => {
                                  <li key={i}>{list.list}</li>
                               ))}
                            </ul>
-                           <Link className="it-btn btn-border-base" href="#">Subscrive Now</Link>
+                           <Link className="it-btn btn-border-base" href="/contact">Contact Now</Link>
                         </div>
                      </div>
                   </div>
