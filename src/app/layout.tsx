@@ -1,4 +1,5 @@
 import "../styles/index.scss"
+import "../styles/index.override.scss"
 
 export const metadata = {
   title: "MakersGoOnline - Web Development, App Development & SEO Services",

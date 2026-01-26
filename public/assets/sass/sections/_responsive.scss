@@ -146,6 +146,23 @@
 	.navbar-top.style-2 {
 		display: none;
 	}
+	.navbar-area-5 .nav-container {
+	    padding: 20px 30px;
+	}
+	.navbar-area-5 .nav-container .navbar-collapse .navbar-nav {
+	    margin-left: 0;
+	    padding: 20px 0;
+	}
+	.navbar-area-5 .nav-container .navbar-collapse .navbar-nav li a {
+	    font-size: 16px;
+	    line-height: 40px;
+	}
+	.navbar-area-5 .nav-right-part-desktop {
+	    display: none !important;
+	}
+	.navbar-area-5.sticky-active .nav-container {
+	    padding: 15px 30px;
+	}
 	.navbar-area-2 .nav-container {
 	    padding: 10px;
 	}
@@ -325,8 +342,39 @@
 		padding: 40px 15px 130px 15px;
 
 	}
+	.navbar-area-5 .nav-container {
+	    padding: 15px 20px;
+	}
+	.navbar-area-5 .nav-container .navbar-collapse .navbar-nav li a {
+	    font-size: 15px;
+	    line-height: 35px;
+	}
+	.navbar-area-5 .logo a img {
+	    max-width: 70px;
+	}
+	.navbar-area-5 .nav-right-part-mobile .search-bar-btn {
+	    font-size: 18px;
+	}
 }
 @media all and (max-width: 575px) {
+	.video-play-btn {
+	    width: 80px;
+	    height: 80px;
+	    font-size: 30px;
+	}
+	.navbar-area-5 .nav-container {
+	    padding: 12px 15px;
+	}
+	.navbar-area-5 .nav-container .navbar-collapse .navbar-nav li a {
+	    font-size: 14px;
+	    line-height: 32px;
+	    padding: 8px 0;
+	}
+	.navbar-area-5.sticky-active .nav-container {
+	    padding: 10px 15px;
+	}
+}
+@media all and (max-width: 360px) {
 	.video-play-btn {
 	    width: 70px;
 	    height: 70px;

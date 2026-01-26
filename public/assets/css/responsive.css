@@ -17,6 +17,9 @@
 	}
 }
 @media all and (max-width: 1599px) {
+	.whatsappButton {
+		right: 60px;
+	}
 	.banner-area-1 {
 	    padding: 170px 0 90px 0;
 	}
@@ -323,6 +326,11 @@
 	}
 }
 @media all and (max-width: 575px) {
+	.whatsappButton {
+		right: 60px;
+		height: 30px;
+		width: 30px;
+	}
 	.video-play-btn {
 	    width: 70px;
 	    height: 70px;
