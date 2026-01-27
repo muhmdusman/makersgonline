@@ -1,0 +1,38 @@
+/* navbar-area-5 flex responsive fixes to avoid overflow at 1440/1024 and improve mobile */
+.navbar-area-5 {
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-container .logo { flex: 0 0 auto; }
+  .nav-container .navbar-collapse { flex: 1 1 auto; }
+  .nav-container .nav-right-part { flex: 0 0 auto; }
+
+  .nav-container .navbar-collapse .navbar-nav {
+    margin-left: 0; /* remove large left margin to prevent overflow */
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-right-part-desktop { margin-left: auto; }
+
+  @media all and (max-width: 1600px) {
+    .nav-container { padding-left: 60px; padding-right: 60px; }
+  }
+
+  @media all and (max-width: 1440px) {
+    .nav-container { padding-left: 40px; padding-right: 40px; }
+    .nav-container .navbar-collapse .navbar-nav { gap: 14px; }
+  }
+
+  @media all and (max-width: 1024px) {
+    .nav-container { padding-left: 24px; padding-right: 24px; }
+    .nav-container .navbar-collapse { flex-basis: 100%; }
+    .nav-container .navbar-collapse .navbar-nav { width: 100%; justify-content: flex-start; }
+    .nav-right-part-desktop { display: none !important; }
+  }
+}

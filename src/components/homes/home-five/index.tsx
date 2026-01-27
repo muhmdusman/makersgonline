@@ -18,14 +18,13 @@ const HomeFive = () => {
       <main className="home-cyber">
          <HeaderFive />
          <Banner />
-         <Brand />
-         <IntroArea />
-         <AboutOne/>
-         <FactArea />
+         <Brand    />
          <Service />
+         <FactArea />
+         <AboutOne/>
          <AboutTwo/>
-         <Team/>
-         <PricingPlan/>
+         {/* <Team/> */}
+         {/* <PricingPlan/> */}
          <Testimonial/>
          <Blog/>
          <Contact/>
