@@ -427,4 +427,19 @@
 	.banner-inner .it-btn {
 		margin-bottom: 10px;
 	}
+	/* Ensure banner buttons stack and fit tiny screens */
+	.banner-inner .btn-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 8px;
+	}
+	.banner-inner .btn-wrap .it-btn {
+		width: 100%;
+		height: 44px;
+		line-height: 44px;
+		padding: 0 16px;
+		font-size: 14px;
+		margin-right: 0; /* override .mr-space */
+	}
 }

@@ -51,36 +51,6 @@ const project_data: DataType[] = [
       title: "Market research",
    },
 
-   // home_2
-
-   {
-      id: 1,
-      page: "home_2",
-      img: project2Thumb_1,
-      title: "Data solution",
-      desc:"Maecenas tempus, tellus eget condi honcus sem quam semper libero.",
-   },
-   {
-      id: 2,
-      page: "home_2",
-      img: project2Thumb_1,
-      title: "It management",
-      desc:"Maecenas tempus, tellus eget condi honcus sem quam semper libero.",
-   },
-   {
-      id: 3,
-      page: "home_2",
-      img: project2Thumb_1,
-      title: "Market research",
-      desc:"Maecenas tempus, tellus eget condi honcus sem quam semper libero.",
-   },
-   {
-      id: 4,
-      page: "home_2",
-      img: project2Thumb_1,
-      title: "It management",
-      desc:"Maecenas tempus, tellus eget condi honcus sem quam semper libero.",
-   },
 ];
 
 export default project_data;

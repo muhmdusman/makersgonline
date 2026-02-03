@@ -21,27 +21,23 @@ interface DataType {
 }[];
 
 const pricing_data: DataType[] = [
-   {
-      id: 1,
-      page: "home_1",
-      plan: "Basic plan",
-      price: 12,
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration", class_name: "close" }, { list: "Unlimited Features", class_name: "close" }],
-   },
-   {
-      id: 2,
-      page: "home_1",
-      plan: "Gold plan",
-      price: 59,
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration", class_name: "close" }, { list: "Unlimited Features", class_name: "close" }],
-   },
-   {
-      id: 3,
-      page: "home_1",
-      plan: "Platinum plan",
-      price: 59,
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration", class_name: "close" }, { list: "Unlimited Features", class_name: "close" }],
-   },
+
+  {
+    id: 1,
+    page: "home_1",
+    plan: "Starter Plan",
+     price_icon: "icomoon-save-money",
+    price: 5000,
+    pricing_list: [
+      { list: "1 Professional Landing Page" },
+      { list: "Responsive Web Design" },
+      { list: "Basic On-Page SEO Setup" },
+      { list: "Fast Loading & Performance Optimized" },
+      { list: "7 Days Free Support" }
+    ],
+  },
+
+
 
    // home_2
 

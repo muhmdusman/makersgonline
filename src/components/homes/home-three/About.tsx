@@ -7,7 +7,7 @@ import aboutImg_3 from "@/assets/img/banner/7.webp"
 
 const About = () => {
    return (
-      <div className="about-area pd-bottom-115">
+      <div className="about-area pd-bottom-115" id="about">
          <div className="container">
             <div className="row">
                <div className="col-lg-6 col-md-9 mb-5 mb-lg-0">
@@ -23,9 +23,9 @@ const About = () => {
                <div className="col-lg-6 align-self-center">
                   <div className="section-title px-lg-5 mb-0">
                      <h5 className="sub-title left-border">About US</h5>
-                     <h2 className="title">Preparing for your success provide best it solutions.</h2>
-                     <p className="content-strong mt-3">Duis leo. Sed fringilla mauris siamet nibh. odales sagittis magna. Sed consequat</p>
-                     <p className="content">Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque sed imquam nunullam quis ante. Etiam sit amet orci.</p>
+                     <h2 className="title">Preparing you for success with the best IT solutions.</h2>
+                     <p className="content-strong mt-3">We help businesses build, deploy, and scale applications using modern technologies and proven processes.</p>
+                     <p className="content">We help businesses build, deploy, and scale applications using modern technologies and proven processes.</p>
                      <ul className="single-list-inner style-check mt-3">
                         <li><i className="fa fa-check"></i>Client happiness</li>
                         <li><i className="fa fa-check"></i>World-class service</li>

@@ -12,7 +12,7 @@ const FooterOne = () => {
                      <h4 className="widget-title">About company</h4>
                      <div className="details">
                         <p>Address</p>
-                        <p>Melbourne’s GPO 434 VIC 3074, Australia.</p>
+                        <p>NSTP, Nust, H-12, Islamabad.</p>
                         <ul className="social-media">
                            <SocialIcon />
                         </ul>

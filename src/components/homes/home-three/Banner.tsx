@@ -12,20 +12,15 @@ interface DataType {
 }[];
 
 const banner_data: DataType[] = [
-   {
-      id: 1,
-      sub_title: "Best it solution",
-      title: (<>A full-service it solution agency for <span>it business</span></>),
-      desc: (<>Dcidunt eget semper nec quam. Sed hendrerit morbi <br /> ac felis. Nunc egestas augue pellentesque</>),
-      class_name: "item_1"
-   },
-   {
-      id: 2,
-      sub_title: "Best it solution",
-      title: (<>A full-service it solution agency for <span>it business</span></>),
-      desc: (<>Dcidunt eget semper nec quam. Sed hendrerit morbi <br /> ac felis. Nunc egestas augue pellentesque</>),
-      class_name: "item_2"
-   },
+  {
+  id: 1,
+  sub_title: "Best IT Solutions",
+  title: (<>A full-service IT solutions agency for <span>modern businesses</span></>),
+  desc: (<>We build scalable, secure, and high-performance digital solutions <br /> that help businesses grow and succeed.</>),
+  class_name: "item_1"
+}
+
+ 
 ]
 
 const setting = {
@@ -58,12 +53,9 @@ const Banner = () => {
    return (
       <div className="banner-area banner-area-3">
          <div className="banner-slider slider-control-round owl-carousel">
-            <Slider {...setting} ref={sliderRef}>
+      
                {banner_data.map((item) => (
                   <div key={item.id} className={`item bg-overlay ${item.class_name}`}>
-                     <div className="banner3-shape shape-1"></div>
-                     <div className="banner3-shape shape-2"></div>
-                     <div className="banner3-shape shape-3"></div>
                      <div className="container">
                         <div className="row justify-content-center">
                            <div className="col-lg-9">
@@ -81,16 +73,6 @@ const Banner = () => {
                      </div>
                   </div>
                ))}
-            </Slider>
-
-            <div className="owl-nav disabled">
-               <button onClick={handlePrevClick} type="button" role="presentation" className="owl-prev">
-                  <i className="fas fa-arrow-left"></i>
-               </button>
-               <button onClick={handleNextClick} type="button" role="presentation" className="owl-next">
-                  <i className="fas fa-arrow-right"></i>
-               </button>
-            </div>
          </div>
       </div>
    )

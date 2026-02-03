@@ -1,96 +1,104 @@
 "use client"
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import inner_project_data from "@/data/InnerProjectData";
+import Slider from "react-slick";
+import project_data from "@/data/ProjectData";
 
-const project_data = inner_project_data.filter((items) => items.page === "project_1");
+// Custom arrows positioned at the start/end of slider width
+const PrevArrow = (props: any) => {
+   const { className, onClick } = props;
+   return (
+      <button
+         type="button"
+         aria-label="Previous"
+         className={`${className || ""} project-arrow prev`}
+         onClick={onClick}
+      >
+         <i className="fa fa-arrow-left" aria-hidden="true" />
+      </button>
+   );
+};
 
-const tab_titles: string[] = ["All Items", "Site Templates", "UI Templates", "UX Templates"];
+const NextArrow = (props: any) => {
+   const { className, onClick } = props;
+   return (
+      <button
+         type="button"
+         aria-label="Next"
+         className={`${className || ""} project-arrow next`}
+         onClick={onClick}
+      >
+         <i className="fa fa-arrow-right" aria-hidden="true" />
+      </button>
+   );
+};
+
+const settings = {
+   dots: false,
+   arrows: true,
+   infinite: true,
+   speed: 500,
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   prevArrow: <PrevArrow />,
+   nextArrow: <NextArrow />,
+   responsive: [
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 576, settings: { slidesToShow: 1 } },
+   ],
+};
 
 const Project = () => {
-   const [activeTab, setActiveTab] = useState(0);
-
-   const handleTabClick = (index: number) => {
-      setActiveTab(index);
-   };
-
-   const getFilteredProjects = () => {
-      switch (activeTab) {
-         case 0:
-            return project_data;
-         case 1:
-            return project_data.slice(0, 2);
-         case 2:
-            return project_data.slice(1, 3);
-         case 3:
-            return [project_data[1]];
-         default:
-            return [];
-      }
-   };
-
-   const filteredProjects = getFilteredProjects();
+   const items = project_data.filter((item) => item.page === "home_1");
 
    return (
-      <section className="project-area bg-cover pd-top-115 pd-bottom-90" style={{ backgroundImage: `url(/assets/img/bg/10.webp)` }}>
+      <section
+         className="project-area bg-cover pd-top-115 pd-bottom-90"
+         style={{ backgroundImage: `url(/assets/img/bg/10.webp)` }}
+         id="projects"
+      >
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-lg-6 col-md-9">
                   <div className="section-title style-white text-center">
-                     <h5 className="sub-title double-border">Our project</h5>
-                     <h2 className="title">Introduce Our Projects</h2>
-                     <p className="content">Dcidunt eget semper nec quam. Sed hendrerit. acfelis Nunc egestas augue atpellentesque laoreet</p>
+                     <h5 className="sub-title fs-2">Our projects</h5>
+                     <h2 className="title">Introducing Our Projects</h2>
+                     <p className="content">
+                        Delivering end-to-end projects with a focus on quality, innovation,
+                        and long-term value.
+                     </p>
                   </div>
                </div>
             </div>
 
-            <div className="row justify-content-center">
-               <div className="col-lg-8">
-                  <div className="isotope-filters project-isotope-btn style-white text-center mb-5">
-                     {tab_titles.map((tab, index) => (
-                        <button key={index} onClick={() => handleTabClick(index)} className={`button ${activeTab === index ? "active" : ""}`}>
-                           {tab}
-                        </button>
-                     ))}
-                  </div>
-               </div>
-            </div>
-
-            <div className="all-item-section">
-               <div className="project-isotope row">
-                  {filteredProjects.map((item) => (
-                     <div key={item.id} className="all-isotope-item col-lg-4 col-sm-6 cat-1 cat-3">
-                        {item.item_two ? (
-                           item.item_two.map((item) => (
-                              <div key={item.id} className="single-project-inner style-two">
-                                 <div className="thumb">
-                                    <Image src={item.thumb} alt="img" />
-                                 </div>
-                                 <div className="details-wrap">
-                                    <h3><Link href="/project-details">{item.title}</Link></h3>
-                                    <Link href="/project-details">{item.desc} <i className="fas fa-arrow-right"></i></Link>
-                                 </div>
-                              </div>
-                           ))
-                        ) : (
+            <div className="row">
+               <div className="col-12">
+                  <Slider {...settings}>
+                     {items.map((item) => (
+                        <div key={item.id}>
                            <div className="single-project-inner style-two">
                               <div className="thumb">
-                                 <Image src={item.thumb ? item.thumb : ""} alt="img" />
+                                 <Image src={item.img} alt={item.title} />
                               </div>
                               <div className="details-wrap">
-                                 <h3><Link href="/project-details">{item.title}</Link></h3>
-                                 <Link href="/project-details">{item.desc} <i className="fas fa-arrow-right"></i></Link>
+                                 <div className="details-inner">
+                                    <h3>{item.title}</h3>
+                                    <p>Explore the case study</p>
+                                    <Link href="/project-details">
+                                       Project Details <i className="fa fa-arrow-right" aria-hidden="true" />
+                                    </Link>
+                                 </div>
                               </div>
                            </div>
-                        )}
-                     </div>
-                  ))}
+                        </div>
+                     ))}
+                  </Slider>
                </div>
             </div>
          </div>
       </section>
-   )
-}
+   );
+};
 
 export default Project

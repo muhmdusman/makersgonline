@@ -1190,6 +1190,37 @@
 	}
 }
 
+/* Slick arrows for project slider inside card width */
+.project-area {
+	.slick-slider {
+		position: relative;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 3;
+		height: 44px;
+		width: 44px;
+		line-height: 42px;
+		text-align: center;
+		border-radius: 50%;
+		background: rgb(3, 7, 244);
+		color: #fff;
+		border: 1px solid rgba(255, 255, 255, 0.35);
+		backdrop-filter: blur(6px);
+	}
+	.slick-prev {
+		left: 0;
+	}
+	.slick-next {
+		right: 0;
+	}
+	.slick-arrow i {
+		font-size: 16px;
+	}
+}
+
 .progress-item {
 	margin-bottom:  20px;
 }
@@ -1752,4 +1783,29 @@
 	.it-btn {
 		padding: 0 20px;
 	}
+}
+
+/* Slick arrows for team slider inside card width (mobile only rendering) */
+.team-area {
+	.slick-slider {
+		position: relative;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 3;
+		height: 44px;
+		width: 44px;
+		line-height: 42px;
+		text-align: center;
+		border-radius: 50%;
+		background: rgb(3, 7, 244);
+		color: #fff;
+		border: 1px solid rgba(255, 255, 255, 0.35);
+		backdrop-filter: blur(6px);
+	}
+	.slick-prev { left: 0; }
+	.slick-next { right: 0; }
+	.slick-arrow i { font-size: 16px; }
 }

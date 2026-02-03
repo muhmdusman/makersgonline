@@ -7,7 +7,7 @@ import serviceShape_2 from "@/assets/img/shape/4.webp";
 
 const Service = () => {
    return (
-      <div className="service-area bg-relative pd-top-115 pd-bottom-90">
+      <div className="service-area bg-relative pd-top-115 pd-bottom-90" id="services">
          <Image className="shape-left-top top_image_bounce" src={serviceShape_1} alt="img" />
          <Image className="shape-right-top top_image_bounce" src={serviceShape_2} alt="img" />
          <div className="container">
@@ -15,8 +15,7 @@ const Service = () => {
                <div className="col-xl-6 col-lg-7">
                   <div className="section-title text-center">
                      <h5 className="sub-title double-line">Our Service</h5>
-                     <h2 className="title">We provided world class service</h2>
-                     <p className="content">Dcidunt eget semper nec quam. Sed hendrerit. acfelis Nunc egestas augue atpellentesque laoreet</p>
+                     <h2 className="title">We provide Professional Web development and Seo services</h2>
                   </div>
                </div>
             </div>
@@ -31,7 +30,6 @@ const Service = () => {
                         <div className="details">
                            <h3><Link href="/service-details">{item.title}</Link></h3>
                            <p>{item.desc} </p>
-                           <Link className="read-more-btn" href="/service-details"><i className="fa fa-arrow-right"></i></Link>
                         </div>
                      </div>
                   </div>

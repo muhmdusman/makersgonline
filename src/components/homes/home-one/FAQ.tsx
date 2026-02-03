@@ -24,7 +24,7 @@ const FAQ = () => {
                   <div className="section-title mb-0">
                      <h5 className="sub-title right-line">Faq</h5>
                      <h2 className="title">Know more about our it solution</h2>
-                     <p className="content">Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque</p>
+                     <p className="content">Everything you need to know about our IT services, support, and solutions—all in one place.</p>
                   </div>
                   <div className="accordion mt-4" id="accordionExample">
                      <CommonFaq />

@@ -13,34 +13,29 @@ interface DataType {
 }[];
 
 const counter_data: DataType[] = [
+ 
    {
-      id: 1,
+      id: 2,
       page: "home_2",
-      title: "Experiences",
-      count: 20,
-      counter_text: "Y",
+      title: "Experience",
+      count: 2,
+      counter_text: "+y",
    },
    {
       id: 2,
       page: "home_2",
-      title: "Happy client",
-      count: 41,
-      counter_text: "M",
+      title: "WEBSITES BUI",
+      count: 20,
+      counter_text: "+",
    },
    {
       id: 3,
       page: "home_2",
-      title: "Project done",
-      count: 40,
-      counter_text: "M",
+      title: "SEO CAMPAIGNS",
+      count: 15,
+      counter_text: "+",
    },
-   {
-      id: 4,
-      page: "home_2",
-      title: "Our service area",
-      count: 250,
-      counter_text: "M",
-   },
+   
 
    // home_5
    

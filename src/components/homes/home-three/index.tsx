@@ -13,13 +13,15 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import Blog from "./Blog";
 import SkillArea from "./SkillArea";
 import Testimonial from "./Testimonial";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const HomeThree = () => {
    return (
       <>
          <HeaderThree />
+         <WhatsAppButton />
          <Banner />
-         <Brand />
+         {/* <Brand /> */}
          <Service />
          <About />
          <Project />
@@ -30,7 +32,7 @@ const HomeThree = () => {
          <WorkArea />
          <Testimonial/>
          <SkillArea/>
-         <Blog />
+         {/* <Blog /> */}
          <FooterOne />
       </>
    )
