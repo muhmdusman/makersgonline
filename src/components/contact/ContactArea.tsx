@@ -16,6 +16,19 @@ const ContactArea = () => {
                <div className="col-lg-4 col-md-6">
                   <div className="single-contact-inner text-center">
                      <div className="icon-box">
+                        <i className="icomoon-pin"></i>
+                     </div>
+                     <div className="details-wrap">
+                        <div className="details-inner">
+                           <h3>Office Address</h3>
+                           <p>NSTP, NUST, H-12, Islamabad</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div className="col-lg-4 col-md-6">
+                  <div className="single-contact-inner text-center">
+                     <div className="icon-box">
                         <i className=" icomoon-email"></i>
                      </div>
                      <div className="details-wrap">
@@ -34,7 +47,11 @@ const ContactArea = () => {
                      <div className="details-wrap">
                         <div className="details-inner">
                            <h3>Phone Number</h3>
-                           <p>+92 <br />343 7523096</p>
+                           <p>
+                              <a href="tel:+923437523096" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                 +92 <br />343 7523096
+                              </a>
+                           </p>
                         </div>
                      </div>
                   </div>

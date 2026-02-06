@@ -13,7 +13,7 @@ const Contact = () => {
       <Breadcrumb title="Contact" sub_title="Contact" />
       <ContactArea />
       {/* <ContactMap /> */}
-      {/* <CtaArea /> */}
+      <CtaArea />
       <FooterOne />
     </>
   )
