@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { InnerProjectData } from "@/types/project.types";
 
 import portfolioThumb_1 from "@/assets/img/project/9.webp";
 import portfolioThumb_2 from "@/assets/img/project/10.webp";
@@ -8,27 +9,20 @@ import portfolioThumb_5 from "@/assets/img/project/15.webp";
 import portfolioThumb_6 from "@/assets/img/project/13.webp";
 import portfolioThumb_7 from "@/assets/img/project/14.webp";
 
-interface DataType {
-   id: number,
-   page:string;
-   thumb?: StaticImageData;
-   title?: string;
-   desc?: string;
-   item_two?: {
-      id: number,
-      thumb: StaticImageData;
-      title: string;
-      desc: string;
-   }[]
-}[];
-
-const inner_project_data: DataType[] = [
+const inner_project_data: InnerProjectData[] = [
    {
       id: 1,
       page:"project_1",
       thumb: portfolioThumb_1,
       title: "Data solution",
       desc: "Discover More",
+      details: {
+         type: "Web Application",
+         languages: ["React", "Node.js", "MongoDB"],
+         platform: "Web",
+         country: "Pakistan",
+         liveUrl: "https://example.com"
+      }
    },
    {
       id: 2,
@@ -38,11 +32,25 @@ const inner_project_data: DataType[] = [
          thumb: portfolioThumb_2,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "Mobile Application",
+            languages: ["React Native", "Firebase"],
+            platform: "iOS & Android",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       }, {
          id: 2,
          thumb: portfolioThumb_4,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "E-commerce",
+            languages: ["Next.js", "Stripe"],
+            platform: "Web",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       },
       ]
    },
@@ -52,6 +60,13 @@ const inner_project_data: DataType[] = [
       thumb: portfolioThumb_3,
       title: "Data solution",
       desc: "Discover More",
+      details: {
+         type: "Dashboard",
+         languages: ["Vue.js", "Laravel"],
+         platform: "Web",
+         country: "Pakistan",
+         liveUrl: "https://example.com"
+      }
    },
 
    // project_2
@@ -62,6 +77,13 @@ const inner_project_data: DataType[] = [
       thumb: portfolioThumb_1,
       title: "Data solution",
       desc: "Discover More",
+      details: {
+         type: "Web Application",
+         languages: ["React", "Node.js", "MongoDB"],
+         platform: "Web",
+         country: "Pakistan",
+         liveUrl: "https://example.com"
+      }
    },
    {
       id: 2,
@@ -71,11 +93,25 @@ const inner_project_data: DataType[] = [
          thumb: portfolioThumb_2,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "Mobile Application",
+            languages: ["React Native", "Firebase"],
+            platform: "iOS & Android",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       }, {
          id: 2,
          thumb: portfolioThumb_4,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "E-commerce",
+            languages: ["Next.js", "Stripe"],
+            platform: "Web",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       },
       ]
    },
@@ -85,6 +121,13 @@ const inner_project_data: DataType[] = [
       thumb: portfolioThumb_3,
       title: "Data solution",
       desc: "Discover More",
+      details: {
+         type: "Dashboard",
+         languages: ["Vue.js", "Laravel"],
+         platform: "Web",
+         country: "Pakistan",
+         liveUrl: "https://example.com"
+      }
    },
    {
       id: 4,
@@ -92,6 +135,13 @@ const inner_project_data: DataType[] = [
       thumb: portfolioThumb_5,
       title: "Data solution",
       desc: "Discover More",
+      details: {
+         type: "CMS Platform",
+         languages: ["WordPress", "PHP"],
+         platform: "Web",
+         country: "Pakistan",
+         liveUrl: "https://example.com"
+      }
    },
    {
       id: 5,
@@ -101,11 +151,25 @@ const inner_project_data: DataType[] = [
          thumb: portfolioThumb_6,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "Portfolio Website",
+            languages: ["Next.js", "Tailwind CSS"],
+            platform: "Web",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       }, {
          id: 2,
          thumb: portfolioThumb_7,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "SaaS Application",
+            languages: ["React", "Express", "PostgreSQL"],
+            platform: "Web",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       },
       ]
    },
@@ -117,11 +181,25 @@ const inner_project_data: DataType[] = [
          thumb: portfolioThumb_4,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "Social Platform",
+            languages: ["Angular", "Firebase"],
+            platform: "Web",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       }, {
          id: 2,
          thumb: portfolioThumb_2,
          title: "Data solution",
          desc: "Discover More",
+         details: {
+            type: "Learning Management System",
+            languages: ["Django", "Python", "PostgreSQL"],
+            platform: "Web",
+            country: "Pakistan",
+            liveUrl: "https://example.com"
+         }
       },
       ]
    },

@@ -28,12 +28,20 @@ const Service = () => {
                            <i className={item.icon}></i>
                         </div>
                         <div className="details">
-                           <h3><Link href="/service-details">{item.title}</Link></h3>
+                           <h3><Link href={`/service-details/${item.title.replace(/\s+/g, '').toLowerCase()}`}>{item.title}</Link></h3>
                            <p>{item.desc} </p>
                         </div>
                      </div>
                   </div>
                ))}
+            </div>
+
+            <div className="row justify-content-center mt-4">
+               <div className="col-auto">
+                  <Link href="/service" className="btn-get-started">
+                     <span>Get Started</span>
+                  </Link>
+               </div>
             </div>
          </div>
       </div>

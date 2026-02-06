@@ -4,10 +4,15 @@ import Wrapper from "@/layouts/Wrapper";
 export const metadata = {
    title: "Service Details Iitechie - IT Solutions and Services React Next js Template",
 };
-const index = () => {
+
+interface PageProps {
+   searchParams: { service?: string };
+}
+
+const index = ({ searchParams }: PageProps) => {
    return (
       <Wrapper>
-         <ServiceDetails />
+         <ServiceDetails service={searchParams.service} />
       </Wrapper>
    )
 }

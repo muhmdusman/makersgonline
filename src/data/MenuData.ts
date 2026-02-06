@@ -21,21 +21,14 @@ const menu_data: MenuItem[] = [
       id: 2,
       has_dropdown: false,
       title: "Services",
-      link: "#services",
+      link: "/service",
      
    },
    {
       id: 3,
       has_dropdown: false,
       title: "Projects",
-      link: "#projects",
-      sub_menus: [
-         { link: "/about", title: "About Us" },
-         { link: "/team", title: "Team" },
-         { link: "/team-details", title: "Team Details" },
-         { link: "/project", title: "project" },
-         { link: "/project-details", title: "project Details" },
-      ],
+      link: "/project",
    },
   
    {

@@ -71,7 +71,7 @@ const Project = () => {
 console.log(images,"images")
    return (
       <>
-         <div className="project-area half-bg-top pd-top-115">
+         <div className="project-area half-bg-top pd-top-115" id="projects">
             <div className="container">
                <div className="row justify-content-center">
                   <div className="col-lg-6 col-md-10">

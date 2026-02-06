@@ -9,9 +9,9 @@ const CtaArea = () => {
             <div className="row justify-content-center">
                <div className="col-lg-6 col-md-8">
                   <div className="single-call-to-action-inner style-white">
-                     <h5>We are here to answer your questions 24/7</h5>
-                     <h2>Need for it solution services</h2>
-                     <Link className="it-btn btn-black mt-3" href="/contact">Contact With Us</Link>
+                     <h5>Have questions? Our team is ready to guide you with the right web and SEO solutions.</h5>
+                     <h2>Need to scale your business?</h2>
+                     <Link className="it-btn btn-black mt-3" href="/contact">Contact Us</Link>
                   </div>
                </div>
             </div>

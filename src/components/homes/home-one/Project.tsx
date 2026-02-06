@@ -67,7 +67,7 @@ const Project = () => {
    };
 
    return (
-      <div className="project-area bg-banner pd-top-115">
+      <div className="project-area bg-banner pd-top-115" id="projects">
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-lg-7">

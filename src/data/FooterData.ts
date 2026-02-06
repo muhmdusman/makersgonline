@@ -12,19 +12,21 @@ const footer_data: DataType[] = [
       id: 1,
       title: "Service",
       nav_links: [
-         { link: "#services", title: "Web design" },
-         { link: "#services", title: "Digital marketing" },
-         { link: "#services", title: "It management" },
+         { link: "/service", title: "Web design" },
+         { link: "/service", title: "Digital marketing" },
+         { link: "/service", title: "Web development" },
+         { link: "/service", title: "SEO" },
+         { link: "/service", title: "E-commerce Solutions" },
       ]
    },
    {
       id: 2,
-      title: "Useful link",
+      title: "Useful links",
       nav_links: [
-         { link: "#about", title: "About Us" },
-         { link: "#team", title: "Team" },
-         { link: "#project", title: "Portfolio" },
-         { link: "#service", title: "Service" },
+         { link: "/#about", title: "About Us" },
+         { link: "/#team", title: "Team" },
+         { link: "/#projects", title: "Portfolio" },
+         { link: "/#services", title: "Service" },
       ]
    },
 ]

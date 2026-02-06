@@ -3,13 +3,25 @@ import HeaderOne from "@/layouts/headers/HeaderOne"
 import ServiceDetailsArea from "./ServiceDetailsArea"
 import CtaArea from "@/components/common/CtaArea"
 import FooterOne from "@/layouts/footers/FooterOne"
+import service_data from "@/data/ServiceData"
+import HeaderThree from "@/layouts/headers/HeaderThree"
 
-const ServiceDetails = () => {
+interface ServiceDetailsProps {
+   service?: string;
+}
+
+const ServiceDetails = ({ service }: ServiceDetailsProps) => {
+   // Find the service title for breadcrumb
+   const currentService = service_data.find(
+      (item) => item.title.replace(/\s+/g, '').toLowerCase() === service
+   );
+   const serviceTitle = currentService?.title || "Service Details";
+
    return (
       <>
-         <HeaderOne />
-         <Breadcrumb title="Service Details" sub_title="Service Details" />
-         <ServiceDetailsArea />
+         <HeaderThree />
+         <Breadcrumb title={serviceTitle} sub_title={serviceTitle} />
+         <ServiceDetailsArea service={service} />
          <CtaArea/>
          <FooterOne/>
       </>

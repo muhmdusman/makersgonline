@@ -1,85 +1,117 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import inner_project_data from "@/data/InnerProjectData";
+import ProjectModal from "./ProjectModal";
+import { ProjectDetails } from "@/types/project.types";
+import { StaticImageData } from "next/image";
 
 const project_data = inner_project_data.filter((items) => items.page === "project_2");
 
-const tab_titles: string[] = ["All Items", "Site Templates", "UI Templates", "UX Templates"];
-
 const ProjectArea = () => {
-   const [activeTab, setActiveTab] = useState(0);
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [selectedProject, setSelectedProject] = useState<{
+      title: string;
+      thumb: StaticImageData;
+      details: ProjectDetails;
+   } | null>(null);
 
-   const handleTabClick = (index: number) => {
-      setActiveTab(index);
+   const handleCardClick = (title: string, thumb: StaticImageData, details: ProjectDetails) => {
+      setSelectedProject({ title, thumb, details });
+      setIsModalOpen(true);
    };
 
-   const getFilteredProjects = () => {
-      switch (activeTab) {
-         case 0:
-            return project_data;
-         case 1:
-            return project_data.slice(0, 4);
-         case 2:
-            return project_data.slice(2, 5);
-         case 3:
-            return project_data.slice(1, 4);
-         default:
-            return [];
+   const closeModal = () => {
+      setIsModalOpen(false);
+      setSelectedProject(null);
+   };
+
+   // Flatten all projects into a single array
+   const allProjects = project_data.flatMap((item) => {
+      if (item.item_two) {
+         return item.item_two;
+      } else if (item.thumb && item.title && item.details) {
+         return [{
+            id: item.id,
+            thumb: item.thumb,
+            title: item.title,
+            desc: item.desc || "",
+            details: item.details
+         }];
       }
-   };
-
-   const filteredProjects = getFilteredProjects();
+      return [];
+   });
 
    return (
-      <section className="project-area pd-top-115 pd-bottom-90">
-         <div className="container">
-            <div className="row justify-content-center">
-               <div className="col-lg-8">
-               <div className="isotope-filters project-isotope-btn text-center mb-5">
-                     {tab_titles.map((tab, index) => (
-                        <button key={index} onClick={() => handleTabClick(index)} className={`button ${activeTab === index ? "active" : ""}`}>
-                           {tab}
-                        </button>
+      <>
+         <style jsx>{`
+            .project-card-wrapper {
+               display: flex;
+               height: 100%;
+            }
+            .single-project-inner.style-two {
+               min-height: 450px;
+               display: flex;
+               flex-direction: column;
+               width: 100%;
+            }
+            .single-project-inner.style-two .thumb {
+               flex-shrink: 0;
+               height: 280px;
+               width: 100%;
+               overflow: hidden;
+               position: relative;
+            }
+            .single-project-inner.style-two .thumb img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+            }
+            .single-project-inner.style-two .details-wrap {
+               flex-grow: 1;
+               display: flex;
+               flex-direction: column;
+            }
+         `}</style>
+         
+         <section className="project-area pd-top-115 pd-bottom-90">
+            <div className="container">
+               <div className="all-item-section">
+                  <div className="row justify-content-center">
+                     {allProjects.map((project, index) => (
+                        <div key={`${project.id}-${index}`} className="col-lg-4 col-md-6 mb-4">
+                           <div className="project-card-wrapper">
+                              <div 
+                                 className="single-project-inner style-two"
+                                 onClick={() => handleCardClick(project.title, project.thumb, project.details)}
+                                 style={{ cursor: 'pointer' }}
+                              >
+                                 <div className="thumb">
+                                    <Image src={project.thumb} alt="img" />
+                                 </div>
+                                 <div className="details-wrap">
+                                    <h3>{project.title}</h3>
+                                    <p>{project.desc}</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      ))}
                   </div>
                </div>
             </div>
 
-            <div className="all-item-section">
-               <div className="project-isotope row">
-                  {filteredProjects.map((item) => (
-                     <div key={item.id} className="all-isotope-item col-lg-4 col-sm-6 cat-1 cat-3">
-                        {item.item_two ? (
-                           item.item_two.map((item) => (
-                              <div key={item.id} className="single-project-inner style-two">
-                                 <div className="thumb">
-                                    <Image src={item.thumb} alt="img" />
-                                 </div>
-                                 <div className="details-wrap">
-                                    <h3><Link href="/project-details">{item.title}</Link></h3>
-                                    <Link href="/project-details">{item.desc} <i className="fas fa-arrow-right"></i></Link>
-                                 </div>
-                              </div>
-                           ))
-                        ) : (
-                           <div className="single-project-inner style-two">
-                              <div className="thumb">
-                                 <Image src={item.thumb ? item.thumb : ""} alt="img" />
-                              </div>
-                              <div className="details-wrap">
-                                 <h3><Link href="/project-details">{item.title}</Link></h3>
-                                 <Link href="/project-details">{item.desc} <i className="fas fa-arrow-right"></i></Link>
-                              </div>
-                           </div>
-                        )}
-                     </div>
-                  ))}
-               </div>
-            </div>
-         </div>
-      </section>
+            {selectedProject && (
+               <ProjectModal
+                  isOpen={isModalOpen}
+                  onClose={closeModal}
+                  title={selectedProject.title}
+                  thumb={selectedProject.thumb}
+                  details={selectedProject.details}
+               />
+            )}
+         </section>
+      </>
    )
 }
 
