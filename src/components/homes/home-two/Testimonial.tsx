@@ -70,7 +70,7 @@ const Testimonial = () => {
                                  <Image className="shape-image-sm top_image_bounce" src={testimonialShape_1} alt="img" />
                                  <Image className="shape-image" src={testimonialShape_2} alt="img" />
                                  <div className="thumb">
-                                    <Image src={item.img} alt="img" />
+                                    <Image src={item.img} alt="img" width={150} height={150} />
                                  </div>
                               </div>
                               <div className="details">

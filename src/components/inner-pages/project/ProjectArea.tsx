@@ -26,22 +26,6 @@ const ProjectArea = () => {
       setSelectedProject(null);
    };
 
-   // Flatten all projects into a single array
-   const allProjects = project_data.flatMap((item) => {
-      if (item.item_two) {
-         return item.item_two;
-      } else if (item.thumb && item.title && item.details) {
-         return [{
-            id: item.id,
-            thumb: item.thumb,
-            title: item.title,
-            desc: item.desc || "",
-            details: item.details
-         }];
-      }
-      return [];
-   });
-
    return (
       <>
          <style jsx>{`
@@ -50,7 +34,7 @@ const ProjectArea = () => {
                height: 100%;
             }
             .single-project-inner.style-two {
-               min-height: 450px;
+               min-height: 280px;
                display: flex;
                flex-direction: column;
                width: 100%;
@@ -78,16 +62,16 @@ const ProjectArea = () => {
             <div className="container">
                <div className="all-item-section">
                   <div className="row justify-content-center">
-                     {allProjects.map((project, index) => (
-                        <div key={`${project.id}-${index}`} className="col-lg-4 col-md-6 mb-4">
+                     {project_data.map((project) => (
+                        <div key={project.id} className="col-lg-4 col-md-6 mb-4">
                            <div className="project-card-wrapper">
                               <div 
                                  className="single-project-inner style-two"
-                                 onClick={() => handleCardClick(project.title, project.thumb, project.details)}
+                                 onClick={() => project.thumb && project.title && project.details && handleCardClick(project.title, project.thumb, project.details)}
                                  style={{ cursor: 'pointer' }}
                               >
                                  <div className="thumb">
-                                    <Image src={project.thumb} alt="img" />
+                                    {project.thumb && <Image src={project.thumb} alt="img" />}
                                  </div>
                                  <div className="details-wrap">
                                     <h3>{project.title}</h3>

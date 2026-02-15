@@ -30,7 +30,7 @@ const Testimonial = () => {
                      {testimonial_data.filter((items) => items.page === "home_5").map((item) => (
                         <div key={item.id} className="single-testimonial-inner style-four">
                            <div className="thumb">
-                              <Image src={item.img} alt="img" />
+                              <Image src={item.img} alt="img" width={150} height={150} />
                            </div>
                            <div className="details">
                               <p>{item.desc}</p>

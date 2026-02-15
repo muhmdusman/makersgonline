@@ -71,7 +71,7 @@ const Testimonial = () => {
                   {testimonial_data.filter((items) => items.page === "inner_page").map((item) => (
                      <div key={item.id} className="item">
                         <div className="single-testimonial-inner style-4">
-                           <Image className="shaddow-img" src={item.img} alt="img" />
+                           <Image className="shaddow-img" src={item.img} alt="img" width={150} height={150} />
                            <div className="details">
                               <p>{item.desc}</p>
                               <h4>{item.name}</h4>
