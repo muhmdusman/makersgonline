@@ -8,7 +8,7 @@ interface DataType {
    count: number;
    count_text: string;
    desc: JSX.Element;
-}[];
+}
 
 const counter_data: DataType[] = [
    {
@@ -48,7 +48,7 @@ const Testimonial = () => {
                      {testimonial_data.filter((items) => items.page === "home_4").map((item) => (
                         <div key={item.id} className="single-testimonial-inner style-three text-center">
                            <div className="thumb">
-                              <Image src={item.img} alt="img" />
+                              <Image src={item.img} alt="img" width={80} height={80} />
                            </div>
                            <div className="details">
                               <p>{item.desc}</p>

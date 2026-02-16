@@ -1,7 +1,7 @@
 import Service from "./Service";
 import About from "./About";
 import Team from "./Team";
-import FAQ from "../home-one/FAQ";
+import FAQ from "./FAQ";
 import PricingPlan from "./PricingPlan";
 import Counter from "./Counter";
 import WorkArea from "./WorkArea";
@@ -13,6 +13,9 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import Blog from "./Blog";
 import SkillArea from "./SkillArea";
 import Testimonial from "./Testimonial";
+import ConsultingForm from "@/components/forms/ConsultingForm"
+import WorkAreaCopy from "./WorkAreaCopy";
+
 
 const HomeThree = () => {
    return (
@@ -27,9 +30,11 @@ const HomeThree = () => {
          <FAQ />
          <PricingPlan />
          <Counter />
-         <WorkArea />
+         <WorkAreaCopy />
+         {/* <WorkArea /> */}
+         {/* <ConsultingForm /> */}
          <Testimonial/>
-         <SkillArea/>
+         {/* <SkillArea/> */}
          {/* <Blog /> */}
          <FooterOne />
       </>

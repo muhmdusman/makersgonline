@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
-import teamThumb_1 from "@/assets/img/team/1.webp";
-import teamThumb_2 from "@/assets/img/team/2.webp";
+import teamThumb_1 from "@/assets/img/team/Usman.png";
+import teamThumb_2 from "@/assets/img/team/Muhaddis.png";
 import teamThumb_3 from "@/assets/img/team/3.webp";
 import teamThumb_4 from "@/assets/img/team/4.webp";
 
@@ -18,29 +18,29 @@ const team_data: DataType[] = [
       id: 1,
       page: "home_1",
       img: teamThumb_1,
-      title: "Karshin Kumar",
+      title: "Muhammad Usman",
       designation: "Founder",
    },
    {
       id: 2,
       page: "home_1",
       img: teamThumb_2,
-      title: "Macal Jonsons",
-      designation: "Director",
+      title: "Muhammad Muhaddis",
+      designation: "Co-Founder",
    },
    {
       id: 3,
       page: "home_1",
       img: teamThumb_3,
-      title: "Estoner William",
-      designation: "HR",
+      title: "Muhammad Ayan",
+      designation: "Marketing and Lead Head",
    },
    {
       id: 4,
       page: "home_1",
       img: teamThumb_4,
-      title: "Casses Tomas",
-      designation: "IT Maneger",
+      title: "Daud Sultan",
+      designation: "SEO Expert",
    },
 
    // inner_page

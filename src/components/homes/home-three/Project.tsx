@@ -85,7 +85,7 @@ const Project = () => {
                                  <div className="details-inner">
                                     <h3>{item.title}</h3>
                                     <p>Explore the case study</p>
-                                    <Link href="/project-details">
+                                    <Link href="/project">
                                        Project Details <i className="fa fa-arrow-right" aria-hidden="true" />
                                     </Link>
                                  </div>

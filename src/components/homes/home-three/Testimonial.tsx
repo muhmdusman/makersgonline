@@ -74,7 +74,7 @@ const Testimonial = () => {
                         <div className="single-testimonial-inner style-3 text-center">
                            <Image className="shaddow-img" src={testiIcon} alt="img" />
                            <div className="thumb">
-                              <Image src={item.img} alt="img" />
+                              <Image src={item.img} alt="img" width={80} height={80} />
                            </div>
                            <div className="details">
                               <p>{item.desc}</p>

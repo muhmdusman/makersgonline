@@ -50,7 +50,7 @@ const Testimonial = () => {
                            <div className="single-testimonial-inner text-md-center px-lg-5 px-md-4">
                               <div className="details">
                                  <div className="thumb">
-                                    <Image src={item.img} alt="img" />
+                                    <Image src={item.img} alt="img" width={80} height={80} />
                                  </div>
                                  <h2>{item.name}</h2>
                                  <span>{item.designation}</span>

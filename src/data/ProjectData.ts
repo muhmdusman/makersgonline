@@ -1,9 +1,11 @@
 import { StaticImageData } from "next/image";
 
-import projectThumb_1 from "@/assets/img/project/1.webp";
-import projectThumb_2 from "@/assets/img/project/2.webp";
-import projectThumb_3 from "@/assets/img/project/3.webp";
-import project2Thumb_1 from "@/assets/img/project/6.webp";
+import projectThumb_1 from "@/assets/img/project/project6.png";
+import projectThumb_2 from "@/assets/img/project/popup-project-2.png";
+import projectThumb_3 from "@/assets/img/project/altaj.png";
+import projectThumb_4 from "@/assets/img/project/popup-project-1.png";
+import projectThumb_5 from "@/assets/img/project/popup-project-3.png";
+import projectThumb_6 from "@/assets/img/project/media.png";
 
 interface DataType {
    id: number,
@@ -18,37 +20,37 @@ const project_data: DataType[] = [
       id: 1,
       page: "home_1",
       img: projectThumb_1,
-      title: "Data solution",
+      title: "Taleem ka Safar",
    },
    {
       id: 2,
       page: "home_1",
       img: projectThumb_2,
-      title: "It management",
+      title: "AQ Solar Solutions",
    },
    {
       id: 3,
       page: "home_1",
       img: projectThumb_3,
-      title: "Market research",
+      title: "Al Taj Ristorante",
    },
    {
       id: 4,
       page: "home_1",
-      img: projectThumb_1,
-      title: "Data solution",
+      img: projectThumb_4,
+      title: "Zocial Plug",
    },
    {
       id: 5,
       page: "home_1",
-      img: projectThumb_2,
-      title: "It management",
+      img: projectThumb_5,
+      title: "Digitaluq",
    },
    {
       id: 6,
       page: "home_1",
-      img: projectThumb_3,
-      title: "Market research",
+      img: projectThumb_6,
+      title: "Money Makers Media",
    },
 
 ];

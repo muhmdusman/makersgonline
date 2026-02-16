@@ -15,7 +15,7 @@ import testiThumb_4 from "@/assets/img/team/4.webp";
 interface DataType {
    img: StaticImageData;
    class_name: string;
-}[];
+}
 
 const testi_small_img_data: DataType[] = [
    {
@@ -70,7 +70,7 @@ const Testimonial = () => {
                                  <Image className="shape-image-sm top_image_bounce" src={testimonialShape_1} alt="img" />
                                  <Image className="shape-image" src={testimonialShape_2} alt="img" />
                                  <div className="thumb">
-                                    <Image src={item.img} alt="img" />
+                                    <Image src={item.img} alt="img" width={100} height={100} />
                                  </div>
                               </div>
                               <div className="details">

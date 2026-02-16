@@ -4003,6 +4003,28 @@ ul {
   transition: 0.4s;
 }
 
+.single-service-inner.style-2 .details h3,
+.single-service-inner.style-2 .details h3 a,
+.single-service-inner.style-2 .details p {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.single-service-inner.style-2:hover {
+  background: var(--main-color) !important;
+}
+
+.single-service-inner.style-2:hover .icon-box i,
+.single-service-inner.style-2:hover .icon-box svg {
+  color: #fff;
+}
+
+.single-service-inner.style-2:hover .details h3,
+.single-service-inner.style-2:hover .details h3 a,
+.single-service-inner.style-2:hover .details p {
+  color: #fff;
+}
+
 .single-service-inner.style-2:hover .details .read-more-btn {
   background: var(--heading-color);
 }

@@ -10,7 +10,7 @@ export interface ProjectDetails {
 
 export interface ProjectItem {
    id: number;
-   thumb: StaticImageData;
+   thumb: StaticImageData | string;
    title: string;
    desc: string;
    details: ProjectDetails;
@@ -19,7 +19,7 @@ export interface ProjectItem {
 export interface InnerProjectData {
    id: number;
    page: string;
-   thumb?: StaticImageData;
+   thumb?: StaticImageData | string;
    title?: string;
    desc?: string;
    details?: ProjectDetails;

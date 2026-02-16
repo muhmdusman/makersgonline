@@ -34,13 +34,28 @@ const FooterOne = () => {
                ))}
 
                <div className="col-lg-3 col-md-6">
-                  <div className="widget widget_subscribe">
-                     <h4 className="widget-title">Contact us</h4>
-                     <div className="single-input-inner style-border style-bg-none">
-                        <input type="text" placeholder="Your Email" />
-                        <button><i className="fa fa-arrow-right"></i></button>
+                  <div className="widget widget_contact">
+                     <h4 className="widget-title">Get In Touch</h4>
+                     <div className="contact-info-list">
+                        <div className="contact-info-item">
+                           <div className="icon">
+                              <i className="fa fa-phone"></i>
+                           </div>
+                           <div className="details">
+                              <p className="label">Call Us</p>
+                              <a href="tel:+923335177841" className="contact-link">+92 333 5177841</a>
+                           </div>
+                        </div>
+                        <div className="contact-info-item">
+                           <div className="icon">
+                              <i className="fa fa-envelope"></i>
+                           </div>
+                           <div className="details">
+                              <p className="label">Email Us</p>
+                              <a href="mailto:info@makersgoonline.com" className="contact-link">info@makersgoonline.com</a>
+                           </div>
+                        </div>
                      </div>
-                     <label><input type="checkbox" />Maecenas tempususcondime honcus sem quam libero</label>
                   </div>
                </div>
             </div>
