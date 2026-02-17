@@ -2,13 +2,38 @@ import ServiceDetails from "@/components/services/service-details";
 import Wrapper from "@/layouts/Wrapper";
 import service_data from "@/data/ServiceData";
 import { notFound } from "next/navigation";
-
-export const metadata = {
-   title: "Service Details - IT Solutions and Services",
-};
+import { Metadata } from "next";
 
 interface PageProps {
    params: { slug: string };
+}
+
+// Generate dynamic metadata for each service
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+   const { slug } = params;
+   
+   const service = service_data.find(
+      (item) => item.title.replace(/\s+/g, '').toLowerCase() === slug
+   );
+
+   if (!service) {
+      return {
+         title: "Service Not Found - Makers Go Online",
+      };
+   }
+
+   return {
+      title: `${service.title} - Professional IT Services | Makers Go Online`,
+      description: service.detailDescription || service.desc,
+      keywords: `${service.title}, ${service.title} services Pakistan, IT solutions, web development, Makers Go Online`,
+      openGraph: {
+         title: `${service.title} - Makers Go Online`,
+         description: service.desc,
+         url: `https://makersgoonline.com/service-details/${slug}`,
+         type: "website",
+         images: typeof service.detailImage === 'string' ? [service.detailImage] : undefined,
+      },
+   };
 }
 
 // Generate static paths for all services (optional but recommended for SSG)

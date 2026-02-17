@@ -62,11 +62,10 @@ const Project = () => {
             <div className="row justify-content-center">
                <div className="col-lg-6 col-md-9">
                   <div className="section-title style-white text-center">
-                     <h5 className="sub-title fs-2">Our projects</h5>
-                     <h2 className="title">Introducing Our Projects</h2>
+                     <h5 className="sub-title fs-2">Our Projects</h5>
+                     <h2 className="title">Success Stories from Our Portfolio</h2>
                      <p className="content">
-                        Delivering end-to-end projects with a focus on quality, innovation,
-                        and long-term value.
+                        Explore how we've helped businesses across industries achieve their digital goals through innovative web development, app solutions, and strategic SEO.
                      </p>
                   </div>
                </div>

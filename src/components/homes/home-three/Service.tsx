@@ -15,7 +15,7 @@ const Service = () => {
                <div className="col-xl-6 col-lg-7">
                   <div className="section-title text-center">
                      <h5 className="sub-title double-line">Our Services</h5>
-                     <h2 className="title">We provide Professional Web development and Seo services</h2>
+                     <h2 className="title">Comprehensive IT Solutions for Modern Businesses</h2>
                   </div>
                </div>
             </div>

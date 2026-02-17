@@ -9,9 +9,9 @@ const FAQ = () => {
             <div className="row">
                <div className="col-lg-6 pe-xl-5 align-self-center">
                   <div className="section-title mb-0">
-                     <h5 className="sub-title left-border">Faq</h5>
-                     <h2 className="title">Know more about solution</h2>
-                     <p className="content">Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque</p>
+                     <h5 className="sub-title left-border">Frequently Asked Questions</h5>
+                     <h2 className="title">Everything You Need to Know About Our Services</h2>
+                     <p className="content">Get answers to common questions about our web development, app development, SEO, and IT solutions. We're here to help you make informed decisions.</p>
                   </div>
                   <div className="accordion mt-4" id="accordionExample">
                      <CommonFaq style={true} />

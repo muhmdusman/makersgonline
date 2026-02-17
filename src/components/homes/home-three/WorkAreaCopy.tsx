@@ -11,8 +11,8 @@ const WorkArea = () => {
                <div className="col-lg-6 col-md-10">
                   <div className="section-title text-center">
                      <h5 className="sub-title double-border">Work Process</h5>
-                     <h2 className="title">How to work it</h2>
-                     <p className="content">Dcidunt eget semper nec quam. Sed hendrerit. acfelis Nunc egestas augue atpellentesque laoreet</p>
+                     <h2 className="title">How We Deliver Results</h2>
+                     <p className="content">Our proven 4-step process ensures your project is delivered on time, within budget, and exceeding expectations.</p>
                   </div>
                </div>
             </div>

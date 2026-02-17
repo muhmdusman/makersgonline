@@ -40,8 +40,8 @@ const Team = ({ style }: any) => {
                <div className="col-lg-6 col-md-10">
                   <div className="section-title text-center">
                      <h5 className="sub-title double-line">Expert Team</h5>
-                     <h2 className="title">Meet with our  expert</h2>
-                     <p className="content">A passionate team of tech experts turning ideas into powerful digital experiences.</p>
+                     <h2 className="title">Meet Our Talented Team of Professionals</h2>
+                     <p className="content">A passionate team of developers, designers, and digital strategists dedicated to transforming your vision into reality.</p>
                   </div>
                </div>
             </div>

@@ -6,7 +6,7 @@ import UseSticky from "@/hooks/UseSticky"
 import { useState } from "react";
 
 import logo_1 from "@/assets/img/logo.webp";
-import logo_2 from "@/assets/img/logo-2.webp";
+import logo_2 from "@/assets/img/logo-2.png";
 
 const HeaderThree = () => {
 

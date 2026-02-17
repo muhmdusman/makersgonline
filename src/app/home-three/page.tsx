@@ -1,9 +1,12 @@
 import HomeThree from "@/components/homes/home-three";
 import Wrapper from "@/layouts/Wrapper";
+import { Metadata } from "next";
 
-export const metadata = {
-   title: "Home Three Iitechie - IT Solutions and Services React Next js Template",
+export const metadata: Metadata = {
+   title: "Makers Go Online - IT Solutions & Digital Services",
+   description: "Leading IT solutions provider offering web development, SEO, and app deployment services in Pakistan.",
 };
+
 const index = () => {
    return (
       <Wrapper>

@@ -23,13 +23,13 @@ const About = () => {
                <div className="col-lg-6 align-self-center">
                   <div className="section-title px-lg-5 mb-0">
                      <h5 className="sub-title left-border">About US</h5>
-                     <h2 className="title">Preparing you for success with the best IT solutions.</h2>
-                     <p className="content-strong mt-3">We help businesses build, deploy, and scale applications using modern technologies and proven processes.</p>
-                     <p className="content">We help businesses build, deploy, and scale applications using modern technologies and proven processes.</p>
+                     <h2 className="title">Your trusted partner for digital transformation and IT excellence.</h2>
+                     <p className="content-strong mt-3">We deliver cutting-edge web development, mobile apps, SEO strategies, and ecommerce solutions that drive real business growth.</p>
+                     <p className="content">From startups to established enterprises, we help businesses leverage modern technology to scale faster, reach more customers, and achieve their digital goals. Our team combines technical expertise with creative thinking to build solutions that work.</p>
                      <ul className="single-list-inner style-check mt-3">
-                        <li><i className="fa fa-check"></i>Client happiness</li>
-                        <li><i className="fa fa-check"></i>World-class service</li>
-                        <li><i className="fa fa-check"></i>Client happiness</li>
+                        <li><i className="fa fa-check"></i>Expert development team</li>
+                        <li><i className="fa fa-check"></i>SEO-optimized solutions</li>
+                        <li><i className="fa fa-check"></i>100% client satisfaction</li>
                      </ul>
                      <div className="btn-wrap mt-4">
                         <Link className="it-btn btn-base" href="/contact">Get Started</Link>

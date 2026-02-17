@@ -35,24 +35,24 @@ const FooterOne = () => {
 
                <div className="col-lg-3 col-md-6">
                   <div className="widget widget_contact">
-                     <h4 className="widget-title">Get In Touch</h4>
+                     <h4 className="widget-title" style={{ color: '#fff' }}>Get In Touch</h4>
                      <div className="contact-info-list">
                         <div className="contact-info-item">
                            <div className="icon">
-                              <i className="fa fa-phone"></i>
+                              <i className="fa fa-phone" style={{ color: '#fff' }}></i>
                            </div>
                            <div className="details">
-                              <p className="label">Call Us</p>
-                              <a href="tel:+923289566356" className="contact-link">+92 328 9566356</a>
+                              <p className="label" style={{ color: '#fff' }}>Call Us</p>
+                              <a href="tel:+923289566356" className="contact-link" style={{ color: '#4a9eff', fontWeight: '500' }}>+92 328 9566356</a>
                            </div>
                         </div>
                         <div className="contact-info-item">
                            <div className="icon">
-                              <i className="fa fa-envelope"></i>
+                              <i className="fa fa-envelope" style={{ color: '#fff' }}></i>
                            </div>
                            <div className="details">
-                              <p className="label">Email Us</p>
-                              <a href="mailto:makersgonline@gmail.com" className="contact-link">makersgonline@gmail.com</a>
+                              <p className="label" style={{ color: '#fff' }}>Email Us</p>
+                              <a href="mailto:makersgonline@gmail.com" className="contact-link" style={{ color: '#fff' }}>makersgonline@gmail.com</a>
                            </div>
                         </div>
                      </div>
@@ -65,7 +65,7 @@ const FooterOne = () => {
             <div className="container">
                <div className="row">
                   <div className="col-md-12 align-self-center">
-                     <p>© 2025. All Rights Reserved</p>
+                     <p>© 2026. All Rights Reserved</p>
                   </div>
                </div>
             </div>

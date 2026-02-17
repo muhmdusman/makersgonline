@@ -15,7 +15,7 @@ const Counter = () => {
                <div className="row">
                   <div className="col-lg-5">
                      <div className="section-title style-white">
-                        <h2 className="title">We Care About Your Important Things</h2>
+                        <h2 className="title">Proven Track Record of Delivering Excellence</h2>
                      </div>
                   </div>
                </div>
