@@ -33,15 +33,15 @@ const team_data: DataType[] = [
       page: "home_1",
       img: teamThumb_3,
       title: "Muhammad Ayan",
-      designation: "Marketing and Lead Head",
+      designation: "Marketing Manager",
    },
-   {
-      id: 4,
-      page: "home_1",
-      img: teamThumb_4,
-      title: "Daud Sultan",
-      designation: "SEO Expert",
-   },
+   // {
+   //    id: 4,
+   //    page: "home_1",
+   //    img: teamThumb_4,
+   //    title: "Daud Sultan",
+   //    designation: "Video Edi",
+   // },
 
    // inner_page
 

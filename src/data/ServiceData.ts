@@ -26,8 +26,8 @@ interface DataType {
    desc: string;
    icon_img?:StaticImageData;
    hover_icon_img?:StaticImageData;
-   detailImage?: StaticImageData;
-   detailImage2?: StaticImageData;
+   detailImage?: StaticImageData | string;
+   detailImage2?: StaticImageData | string;
    detailDescription?: string;
    keyBenefits?: {
       icon: string;
@@ -43,8 +43,8 @@ const service_data: DataType[] = [
       icon: "icomoon-layer",
       title: "Web design",
       desc: "We provide and create user-focused designs that are visually appealing, intuitive, and optimized for engagement and conversions.",
-      detailImage: serviceDetail_1,
-      detailImage2: serviceDetail_2,
+      detailImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=80",
+      detailImage2: "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=80",
       detailDescription: "Our web design services combine aesthetics with functionality to create stunning, user-friendly websites that drive results.",
       keyBenefits: [
          {
@@ -75,8 +75,8 @@ const service_data: DataType[] = [
       icon: "icomoon-application",
       title: "Web development",
       desc: "makers go online build fast, scalable websites tailored to your business goals. Clean code, modern tech, and seamless performance.",
-      detailImage: serviceDetail_1,
-      detailImage2: serviceDetail_2,
+      detailImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+      detailImage2: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
       detailDescription: "We build robust, scalable web applications using cutting-edge technologies to ensure your digital success.",
       keyBenefits: [
          {
@@ -107,8 +107,8 @@ const service_data: DataType[] = [
       icon: "icomoon-search",
       title: "SEO Marketing",
       desc: "Optimize your online presence with our expert SEO services. We boost your rankings, drive traffic, and increase conversions.",
-      detailImage: serviceDetail_1,
-      detailImage2: serviceDetail_2,
+      detailImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      detailImage2: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
       detailDescription: "Our SEO strategies are data-driven and designed to improve your visibility, increase organic traffic, and maximize ROI.",
       keyBenefits: [
          {
@@ -139,8 +139,8 @@ const service_data: DataType[] = [
       icon: "icomoon-computer",
       title: "App Deployment",
       desc: "Seamless deployment from code to production. We ensure fast, secure, and reliable launches with zero downtime and maximum performance",
-      detailImage: serviceDetail_1,
-      detailImage2: serviceDetail_2,
+      detailImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      detailImage2: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
       detailDescription: "Professional deployment services ensuring your applications go live smoothly with continuous monitoring and support.",
       keyBenefits: [
          {
@@ -171,8 +171,8 @@ const service_data: DataType[] = [
   icon: "icomoon-money",
   title: "Ecommerce Solutions",
   desc: "We build secure, scalable ecommerce platforms with smooth user experiences, easy product management, and conversion-focused design.",
-  detailImage: serviceDetail_1,
-  detailImage2: serviceDetail_2,
+  detailImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
+  detailImage2: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80",
   detailDescription: "Complete ecommerce solutions from design to deployment, with payment integration and inventory management.",
   keyBenefits: [
      {
@@ -203,8 +203,8 @@ const service_data: DataType[] = [
   icon: "icomoon-laptop",
   title: "App Development",
   desc: "Custom mobile and web applications built for performance, scalability, and seamless user experiences across all devices.",
-  detailImage: serviceDetail_1,
-  detailImage2: serviceDetail_2,
+  detailImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80",
+  detailImage2: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=80",
   detailDescription: "Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android.",
   keyBenefits: [
      {

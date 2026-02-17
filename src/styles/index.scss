@@ -10,3 +10,30 @@
 @import "../../public/assets/css/nice-select.min.css";
 @import "../../public/assets/sass/style.scss";
 @import "../../public/assets/css/responsive.css";
+
+/* Page Transition Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Smooth page transitions */
+.page-transition-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Prevent layout shift during transitions */
+main {
+  isolation: isolate;
+}
+
+/* Smooth scroll to top on page change */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

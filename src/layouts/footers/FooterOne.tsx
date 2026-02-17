@@ -43,7 +43,7 @@ const FooterOne = () => {
                            </div>
                            <div className="details">
                               <p className="label">Call Us</p>
-                              <a href="tel:+923335177841" className="contact-link">+92 333 5177841</a>
+                              <a href="tel:+923289566356" className="contact-link">+92 328 9566356</a>
                            </div>
                         </div>
                         <div className="contact-info-item">
@@ -52,7 +52,7 @@ const FooterOne = () => {
                            </div>
                            <div className="details">
                               <p className="label">Email Us</p>
-                              <a href="mailto:info@makersgoonline.com" className="contact-link">info@makersgoonline.com</a>
+                              <a href="mailto:makersgonline@gmail.com" className="contact-link">makersgonline@gmail.com</a>
                            </div>
                         </div>
                      </div>

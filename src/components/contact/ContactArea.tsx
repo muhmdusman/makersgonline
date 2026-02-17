@@ -34,7 +34,7 @@ const ContactArea = () => {
                      <div className="details-wrap">
                         <div className="details-inner">
                            <h3>Email Address</h3>
-                           <p>support@gmail.com <br /> www.infomar.net</p>
+                           <p>makersgonline@gmail.com</p>
                         </div>
                      </div>
                   </div>
@@ -48,8 +48,8 @@ const ContactArea = () => {
                         <div className="details-inner">
                            <h3>Phone Number</h3>
                            <p>
-                              <a href="tel:+923437523096" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                 +92 <br />343 7523096
+                              <a href="tel:+923289566356" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                 +92 328 9566356
                               </a>
                            </p>
                         </div>

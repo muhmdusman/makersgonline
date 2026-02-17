@@ -59,7 +59,12 @@ const ServiceDetailsArea = ({ service }: ServiceDetailsAreaProps) => {
                   <div className="blog-details-page-content">
                      <div className="single-blog-inner">
                         <div className="thumb">
-                           <Image src={mainImage} alt={serviceTitle} />
+                           <Image 
+                              src={mainImage} 
+                              alt={serviceTitle}
+                              width={1200}
+                              height={800}
+                           />
                         </div>
                         <div className="details">
                            <h2>{serviceTitle}</h2>
@@ -103,7 +108,12 @@ const ServiceDetailsArea = ({ service }: ServiceDetailsAreaProps) => {
                            <div className="row mt-5">
                               <div className="col-12 text-center">
                                  <div className="thumb image-hover-animate border-radius-5">
-                                    <Image src={secondaryImage} alt={serviceTitle} />
+                                    <Image 
+                                       src={secondaryImage} 
+                                       alt={serviceTitle}
+                                       width={1200}
+                                       height={800}
+                                    />
                                  </div>
                               </div>
                            </div>
