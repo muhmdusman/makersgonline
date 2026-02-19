@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 import teamThumb_1 from "@/assets/img/team/Usman.png";
 import teamThumb_2 from "@/assets/img/team/Muhaddis.png";
-import teamThumb_3 from "@/assets/img/team/3.webp";
+import teamThumb_3 from "@/assets/img/team/Ayan.png";
 import teamThumb_4 from "@/assets/img/team/4.webp";
 
 interface DataType {
