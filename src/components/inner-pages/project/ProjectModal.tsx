@@ -1,15 +1,6 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-
-interface ProjectDetails {
-   title: string;
-   description: string;
-   type: string;
-   langages: string;
-   platform: string;
-   country: string;
-   url: string;
-}
+import { ProjectDetails } from "@/types/project.types";
 
 interface ProjectModalProps {
    isOpen: boolean;
@@ -168,8 +159,7 @@ const ProjectModal = ({ isOpen, onClose, title, thumb, details }: ProjectModalPr
                   <button className="close-button" onClick={onClose}>×</button>
                </div>
                <div className="modal-body">
-                  <h2 className="modal-title">{details.title}</h2>
-                  <p style={{ marginBottom: '20px', color: '#666', lineHeight: '1.6' }}>{details.description}</p>
+                  <h2 className="modal-title">{title}</h2>
                   
                   <div className="detail-item">
                      <span className="detail-label">Type</span>
@@ -178,7 +168,11 @@ const ProjectModal = ({ isOpen, onClose, title, thumb, details }: ProjectModalPr
                   
                   <div className="detail-item">
                      <span className="detail-label">Technologies</span>
-                     <div className="detail-value">{details.langages}</div>
+                     <div className="languages-list">
+                        {details.languages.map((lang, index) => (
+                           <span key={index} className="language-tag">{lang}</span>
+                        ))}
+                     </div>
                   </div>
                   
                   <div className="detail-item">
@@ -194,12 +188,12 @@ const ProjectModal = ({ isOpen, onClose, title, thumb, details }: ProjectModalPr
                   <div className="detail-item">
                      <span className="detail-label">Live URL</span>
                      <a 
-                        href={`https://${details.url}`} 
+                        href={details.liveUrl} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="live-url-link detail-value"
                      >
-                        {details.url}
+                        {details.liveUrl}
                         <i className="fas fa-external-link-alt"></i>
                      </a>
                   </div>

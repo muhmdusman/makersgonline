@@ -12,11 +12,11 @@ const ProjectArea = () => {
    const [isModalOpen, setIsModalOpen] = useState(false);
    const [selectedProject, setSelectedProject] = useState<{
       title: string;
-      thumb: StaticImageData;
+      thumb: StaticImageData | string;
       details: ProjectDetails;
    } | null>(null);
 
-   const handleCardClick = (title: string, thumb: StaticImageData, details: ProjectDetails) => {
+   const handleCardClick = (title: string, thumb: StaticImageData | string, details: ProjectDetails) => {
       setSelectedProject({ title, thumb, details });
       setIsModalOpen(true);
    };

@@ -7,7 +7,7 @@ import testimonial_data from "@/data/TestimonialData";
 import testimonialShape_1 from "@/assets/img/about/1sm.webp";
 import testimonialShape_2 from "@/assets/img/about/1s.webp";
 
-import testiThumb_1 from "@/assets/img/team/1.webp";
+import testiThumb_1 from "@/assets/img/team/Muhaddis.png";
 import testiThumb_2 from "@/assets/img/team/2.webp";
 import testiThumb_3 from "@/assets/img/team/3.webp";
 import testiThumb_4 from "@/assets/img/team/4.webp";

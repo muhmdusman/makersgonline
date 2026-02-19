@@ -65,7 +65,7 @@ const Project = () => {
                      <h5 className="sub-title fs-2">Our Projects</h5>
                      <h2 className="title">Success Stories from Our Portfolio</h2>
                      <p className="content">
-                        Explore how we've helped businesses across industries achieve their digital goals through innovative web development, app solutions, and strategic SEO.
+                        Explore how we&apos;ve helped businesses across industries achieve their digital goals through innovative web development, app solutions, and strategic SEO.
                      </p>
                   </div>
                </div>

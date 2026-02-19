@@ -63,7 +63,7 @@ const Testimonial = () => {
                   <div className="section-title style-white text-center">
                      <h5 className="sub-title double-line">Client Feedback</h5>
                      <h2 className="title">What Our Clients Say About Us</h2>
-                     <p className="content">Real results from real businesses. See how we've helped companies across Pakistan and beyond transform their digital presence.</p>
+                     <p className="content">Real results from real businesses. See how we&apos;ve helped companies across Pakistan and beyond transform their digital presence.</p>
                   </div>
                </div>
             </div>
