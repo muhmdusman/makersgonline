@@ -37,21 +37,17 @@ const FooterOne = () => {
                   <div className="widget widget_contact">
                      <h4 className="widget-title" style={{ color: '#fff' }}>Get In Touch</h4>
                      <div className="contact-info-list">
-                        <div className="contact-info-item">
-                           <div className="icon">
-                              <i className="fa fa-phone" style={{ color: '#fff' }}></i>
-                           </div>
-                           <div className="details">
-                              <p className="label" style={{ color: '#fff' }}>Call Us</p>
-                              <a href="tel:+923289566356" className="contact-link" style={{ color: '#4a9eff', fontWeight: '500' }}>+92 328 9566356</a>
+                        <div className="contact-info-item" style={{ marginBottom: '20px' }}>
+                           <p className="label" style={{ color: '#fff', marginBottom: '10px' }}>Call Us</p>
+                           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                              <i className="fa fa-phone" style={{ color: '#4a9eff', fontSize: '18px' }}></i>
+                              <a href="tel:+923437523096" className="contact-link" style={{ color: '#4a9eff', fontWeight: '500' }}>+92 343 7523096</a>
                            </div>
                         </div>
                         <div className="contact-info-item">
-                           <div className="icon">
-                              <i className="fa fa-envelope" style={{ color: '#fff' }}></i>
-                           </div>
-                           <div className="details">
-                              <p className="label" style={{ color: '#fff' }}>Email Us</p>
+                           <p className="label" style={{ color: '#fff', marginBottom: '10px' }}>Email Us</p>
+                           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                              <i className="fa fa-envelope" style={{ color: '#4a9eff', fontSize: '18px' }}></i>
                               <a href="mailto:makersgonline@gmail.com" className="contact-link" style={{ color: '#fff' }}>makersgonline@gmail.com</a>
                            </div>
                         </div>

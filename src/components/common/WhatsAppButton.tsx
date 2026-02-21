@@ -1,7 +1,7 @@
 "use client";
 
 const WhatsAppButton = () => {
-    const whatsappNumber = "+923289566356";
+    const whatsappNumber = "+923437523096";
     const whatsappMessage = "Hello! I'm interested in your services.";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         whatsappMessage

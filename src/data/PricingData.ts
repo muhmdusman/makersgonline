@@ -29,11 +29,13 @@ const pricing_data: DataType[] = [
      price_icon: "icomoon-save-money",
     price: 5000,
     pricing_list: [
-      { list: "1 Professional Landing Page" },
+      { list: "1 Professional Website" },
       { list: "Responsive Web Design" },
       { list: "Basic On-Page SEO Setup" },
       { list: "Fast Loading & Performance Optimized" },
-      { list: "7 Days Free Support" }
+      { list: "Social Media Integration" },
+      { list: "Contact Form Setup" },
+      { list: "10 Days Free Support" }
     ],
   },
 
@@ -65,30 +67,55 @@ const pricing_data: DataType[] = [
 
    // home_3
 
-   {
-      id: 1,
-      page: "home_3",
-      price_icon: "icomoon-save-money",
-      plan: "Basic plan",
-      price: 12,
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration", class_name: "close" }, { list: "Unlimited Features", class_name: "close" }],
-   },
+
    {
       id: 2,
-      page: "home_3",
-      price_icon: "icomoon-money",
-      plan: "Gold plan",
-      price: 59,
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration", class_name: "close" }, { list: "Unlimited Features", class_name: "close" }],
+      page: "home_1",
+      price_icon: "icomoon-solution",
+      plan: "Business Plan",
+      price: 10000,
+      pricing_list: [
+         { list: "Up to 5 Pages Website" },
+         { list: "Fully Responsive Design" },
+         { list: "Advanced SEO Optimization" },
+         { list: "Social Media Integration" },
+         { list: "Contact Form & Email Setup" },
+         { list: "Google Analytics Integration" },
+         { list: "30 Days Support" }
+      ],
    },
    {
       id: 3,
-      page: "home_3",
+      page: "home_1",
       price_icon: "icomoon-solution",
-      plan: "Platinum plan",
-      price: 59,
-      pricing_list: [{ list: "30 Days Trial Features" }, { list: "Synced To Cloud Database", }, { list: "10 Hours Of Support" }, { list: "Social Media Integration", class_name: "close" }, { list: "Unlimited Features", class_name: "close" }],
+      plan: "Professional Plan",
+      price: 15000,
+      pricing_list: [
+         { list: "Up to 10 Pages Website" },
+         { list: "Custom Design & Development" },
+         { list: "Complete SEO Package" },
+         { list: "Social Media Integration" },
+         { list: "CMS Integration (WordPress)" },
+         { list: "E-commerce Functionality" },
+         { list: "60 Days Support & Maintenance" }
+      ],
    },
+   // {
+   //    id: 4,
+   //    page: "home_1",
+   //    price_icon: "icomoon-idea",
+   //    plan: "Enterprise Plan",
+   //    price: 25000,
+   //    pricing_list: [
+   //       { list: "Unlimited Pages" },
+   //       { list: "Custom Web Application" },
+   //       { list: "Premium SEO & Marketing" },
+   //       { list: "Advanced E-commerce Features" },
+   //       { list: "Payment Gateway Integration" },
+   //       { list: "API & Mobile App Development" },
+   //       { list: "90 Days Priority Support" }
+   //    ],
+   // },
 
    // home_5
 

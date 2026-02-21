@@ -27,7 +27,7 @@ const PricingPlan = () => {
                            <div className="price">
                               <sup>Rs</sup>
                               <h2 className="d-inline-block">{item.price}</h2>
-                              <sub> / Mo</sub>
+                              <sub>/one time</sub>
                            </div>
                         </div>
                         <div className="details">
