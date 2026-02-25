@@ -3,7 +3,9 @@ import { StaticImageData } from "next/image";
 import teamThumb_1 from "@/assets/img/team/Usman.png";
 import teamThumb_2 from "@/assets/img/team/Muhaddis.png";
 import teamThumb_3 from "@/assets/img/team/Ayan.png";
-import teamThumb_4 from "@/assets/img/team/4.webp";
+import teamThumb_4 from "@/assets/img/team/Haris.jpg";
+import teamThumb_5 from "@/assets/img/team/Syed.jpg";
+import teamThumb_6 from "@/assets/img/team/Zayan.jpg";      
 
 interface DataType {
    id: number;
@@ -21,27 +23,42 @@ const team_data: DataType[] = [
       title: "Muhammad Usman",
       designation: "Founder",
    },
-   {
+     {
       id: 2,
       page: "home_1",
-      img: teamThumb_2,
-      title: "Muhammad Muhaddis",
-      designation: "Co-Founder",
+      img: teamThumb_3,
+      title: "Muhammad Ayan",
+      designation: "CEO",
    },
    {
       id: 3,
       page: "home_1",
-      img: teamThumb_3,
-      title: "Muhammad Ayan",
+      img: teamThumb_2,
+      title: "Muhammad Muhaddis",
+      designation: "Technical Lead",
+   },
+ 
+   {
+      id: 4,
+      page: "home_1",
+      img: teamThumb_4,
+      title: "Haris Tanveer",
       designation: "Marketing Manager",
    },
-   // {
-   //    id: 4,
-   //    page: "home_1",
-   //    img: teamThumb_4,
-   //    title: "Daud Sultan",
-   //    designation: "Video Edi",
-   // },
+   {
+      id: 5,
+      page: "home_1",
+      img: teamThumb_5,
+      title: "Syed Aleem \nShah",
+      designation: "Video Editor",
+   },
+   {
+      id: 6,
+      page: "home_1",
+      img: teamThumb_6,
+      title: "Muhammad Zayan",
+      designation: "Graphics Designer",
+   },
 
    // inner_page
 
