@@ -71,7 +71,7 @@ const pricing_data: DataType[] = [
    {
       id: 2,
       page: "home_1",
-      price_icon: "icomoon-solution",
+      price_icon: "icomoon-diamond text-white",
       plan: "Business Plan",
       price: 10000,
       pricing_list: [

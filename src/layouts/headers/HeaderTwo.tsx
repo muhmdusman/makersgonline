@@ -7,8 +7,6 @@ import UseSticky from "@/hooks/UseSticky"
 import { useState } from "react";
 import HeaderSearchbar from "./menu/HeaderSearchbar";
 
-import logo_1 from "@/assets/img/logo.webp";
-
 const HeaderTwo = () => {
 
    const [isActive, setIsActive] = useState<boolean>(false);
@@ -34,7 +32,7 @@ const HeaderTwo = () => {
                   </button>
                </div>
                <div className="logo d-inline-block d-lg-none">
-                  <Link href="/"><Image src={logo_1} alt="img" /></Link>
+                  <Link href="/"><Image src="/assets/img/file.svg" alt="logo" width={140} height={72} style={{ width: '100%', height: 'auto', maxWidth: '140px' }} /></Link>
                </div>
                <div className="nav-right-part nav-right-part-mobile">
                   <a onClick={() => setIsSearch(true)} style={{ cursor: "pointer" }} className="search-bar-btn">

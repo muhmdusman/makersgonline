@@ -2,7 +2,7 @@ import Skillbar from "@/components/common/Skillbar"
 import SocialIcon from "@/components/common/SocialIcon"
 import Image from "next/image"
 
-import teamDetailsThumb from "@/assets/img/team/single-team.webp"
+import teamDetailsThumb from "@/assets/img/team/Usman.png"
 
 const TeamDetailsArea = () => {
    return (

@@ -5,9 +5,6 @@ import NavMenu from "./menu/NavMenu";
 import UseSticky from "@/hooks/UseSticky"
 import { useState } from "react";
 
-import logo_1 from "@/assets/img/logo.webp";
-import logo_2 from "@/assets/img/logo-2.png";
-
 const HeaderThree = () => {
 
    const [isActive, setIsActive] = useState<boolean>(false);
@@ -31,8 +28,8 @@ const HeaderThree = () => {
                   </button>
                </div>
                <div className="logo">
-                  <Link className="d-none d-lg-inline-block" href="/"><Image src={logo_2} alt="img" /></Link>
-                  <Link className="d-lg-none d-inline-block" href="/"><Image src={logo_1} alt="img" /></Link>
+                  <Link className="d-none d-lg-inline-block" href="/"><Image src="/assets/img/file.svg" alt="logo" width={140} height={72} style={{ width: '100%', height: 'auto', maxWidth: '140px' }} /></Link>
+                  <Link className="d-lg-none d-inline-block" href="/"><Image src="/assets/img/file.svg" alt="logo" width={110} height={56} style={{ width: '100%', height: 'auto', maxWidth: '110px' }} /></Link>
                </div>
                <div className="nav-right-part nav-right-part-mobile">
                

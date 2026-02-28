@@ -1,8 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import headerTopLogo from "@/assets/img/logo.webp"
-
 const HeaderTopTwo = () => {
    return (
       <div className="navbar-top style-2">
@@ -10,7 +8,7 @@ const HeaderTopTwo = () => {
             <div className="row">
                <div className="col-lg-3 d-lg-inline-block d-none">
                   <div className="logo">
-                     <Link href="/"><Image src={headerTopLogo} alt="img" /></Link>
+                     <Link href="/"><Image src="/assets/img/file.svg" alt="logo" width={140} height={72} style={{ width: '100%', height: 'auto', maxWidth: '140px' }} /></Link>
                   </div>
                </div>
                <div className="col-lg-3 col-md-5 align-self-center">
