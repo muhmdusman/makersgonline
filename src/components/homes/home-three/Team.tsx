@@ -2,7 +2,6 @@
 import SocialIcon from "@/components/common/SocialIcon"
 import team_data from "@/data/TeamData"
 import Image from "next/image"
-import Link from "next/link"
 import Slider from "react-slick"
 
 // Custom arrow components
@@ -181,7 +180,7 @@ const Team = ({ style }: any) => {
                                        marginBottom: '5px',
                                        fontSize: '18px'
                                     }}>
-                                       <Link href="/team-details">{item.title}</Link>
+                                       {item.title}
                                     </h4>
                                     <p style={{
                                        overflow: 'hidden',
@@ -194,7 +193,7 @@ const Team = ({ style }: any) => {
                               </div>
                               <div className="hover-details-wrap">
                                  <div className="hover-details-inner">
-                                    <h4><Link href="/team-details">{item.title}</Link></h4>
+                                    <h4>{item.title}</h4>
                                     <p>{item.designation}</p>
                                     <ul className="social-media mt-3">
                                        <SocialIcon />
