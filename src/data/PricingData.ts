@@ -103,10 +103,11 @@ const pricing_data: DataType[] = [
    {
       id: 4,
       page: "home_1",
-      price_icon: "icomoon-idea",
+      price_icon: "icomoon-application",
       plan: "Custom Solution",
       price: "0000",
       pricing_list: [
+         {list: "Price on Negotiations"},
          { list: "Unlimited Pages" },
          { list: "Custom Web Application" },
          { list: "Premium SEO & Marketing" },

@@ -29,7 +29,6 @@
 }
 .icomoon-application:before {
   content: "\e901";
-  color: rgb(0, 96, 255);
 }
 .icomoon-approval:before {
   content: "\e902";
