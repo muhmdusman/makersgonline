@@ -11,14 +11,14 @@ interface DataType {
    price_icon?: string;
    price_icon_img?: StaticImageData;
    plan: string;
-   price: number;
+   price: number | string;
    sub_price?: string;
    pricing_list: {
       icon?: string
       list: string;
       class_name?: string;
    }[];
-}[];
+}
 
 const pricing_data: DataType[] = [
 
@@ -27,7 +27,7 @@ const pricing_data: DataType[] = [
     page: "home_1",
     plan: "Starter Plan",
      price_icon: "icomoon-save-money",
-    price: 5000,
+    price: 8000,
     pricing_list: [
       { list: "1 Professional Website" },
       { list: "Responsive Web Design" },
@@ -73,7 +73,7 @@ const pricing_data: DataType[] = [
       page: "home_1",
       price_icon: "icomoon-diamond text-white",
       plan: "Business Plan",
-      price: 10000,
+      price: 15000,
       pricing_list: [
          { list: "Up to 5 Pages Website" },
          { list: "Fully Responsive Design" },
@@ -89,7 +89,7 @@ const pricing_data: DataType[] = [
       page: "home_1",
       price_icon: "icomoon-solution",
       plan: "Professional Plan",
-      price: 15000,
+      price: 18000,
       pricing_list: [
          { list: "Up to 10 Pages Website" },
          { list: "Custom Design & Development" },
@@ -100,22 +100,21 @@ const pricing_data: DataType[] = [
          { list: "60 Days Support & Maintenance" }
       ],
    },
-   // {
-   //    id: 4,
-   //    page: "home_1",
-   //    price_icon: "icomoon-idea",
-   //    plan: "Enterprise Plan",
-   //    price: 25000,
-   //    pricing_list: [
-   //       { list: "Unlimited Pages" },
-   //       { list: "Custom Web Application" },
-   //       { list: "Premium SEO & Marketing" },
-   //       { list: "Advanced E-commerce Features" },
-   //       { list: "Payment Gateway Integration" },
-   //       { list: "API & Mobile App Development" },
-   //       { list: "90 Days Priority Support" }
-   //    ],
-   // },
+   {
+      id: 4,
+      page: "home_1",
+      price_icon: "icomoon-idea",
+      plan: "Custom Solution",
+      price: "0000",
+      pricing_list: [
+         { list: "Unlimited Pages" },
+         { list: "Custom Web Application" },
+         { list: "Premium SEO & Marketing" },
+         { list: "Payment Gateway Integration" },
+         {list:"Scaled according to your needs"},
+         { list: "60 Days Priority Support" }
+      ],
+   },
 
    // home_5
 
