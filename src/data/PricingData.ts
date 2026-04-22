@@ -91,7 +91,7 @@ const pricing_data: DataType[] = [
       plan: "Professional Plan",
       price: 18000,
       pricing_list: [
-         { list: "Up to 10 Pages Website" },
+         { list: "Up to 7 Pages Website" },
          { list: "Custom Design & Development" },
          { list: "Complete SEO Package" },
          { list: "Social Media Integration" },
